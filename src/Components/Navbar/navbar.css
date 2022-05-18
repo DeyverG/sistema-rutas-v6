@@ -1,0 +1,14 @@
+.navbar-container{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.navbar{
+    margin-right: 20px;
+    color: rgb(55, 55, 185);
+    text-decoration: none;
+}
+
+.navbar:hover{
+    text-decoration: underline;
+}
