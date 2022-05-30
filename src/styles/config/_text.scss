@@ -1,0 +1,15 @@
+.text {
+    @include color-modifiers('text', 'color');
+ }
+
+// ==========================================================================
+// TEXT SIZES: Ej.: .text-tiny;
+// ==========================================================================
+
+@each $name,
+$size in $sizes {
+   .text-#{$name} {
+      font-size: $size;
+      transition: .3s ease;
+   }
+}

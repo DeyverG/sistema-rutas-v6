@@ -1,0 +1,8 @@
+// Margins
+@include list-spacing('margin', 'all', '.m');
+@include list-spacing('margin', 'top', '.mt');
+@include list-spacing('margin', 'bottom', '.mb');
+@include list-spacing('margin', 'right', '.mr');
+@include list-spacing('margin', 'left', '.ml');
+@include list-spacing('margin', 'axis-y', '.my');
+@include list-spacing('margin', 'axis-x', '.mx');

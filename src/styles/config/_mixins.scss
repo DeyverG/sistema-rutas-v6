@@ -1,0 +1,61 @@
+// ==========================================================================
+// Mixins para la generación de los spaciados ( margins y paddings )
+// ==========================================================================
+
+@mixin list-spacing($type, $direction, $className) {
+    @each $name, $size in $sizes {
+       @if $direction == all {
+          #{$className}-#{$name} { 
+             #{$type}: $size;
+          }
+       } 
+       @else if $direction == top {
+          #{$className}-#{$name} { 
+             #{$type}-top: $size;
+          }
+       } 
+       @else if $direction == bottom {
+             #{$className}-#{$name} { 
+             #{$type}-bottom: $size;
+          }
+       } 
+       @else if $direction == right {
+          #{$className}-#{$name}{ 
+             #{$type}-right: $size;
+          }
+       } 
+       @else if $direction == left {
+          #{$className}-#{$name}{ 
+             #{$type}-left: $size;
+          }
+       } 
+       @else if $direction == axis-y {
+          #{$className}-#{$name}{ 
+             #{$type}-top: $size;
+             #{$type}-bottom: $size;
+          }
+       } 
+       @else if $direction == axis-x {
+          #{$className}-#{$name}{ 
+             #{$type}-left: $size;
+             #{$type}-right: $size;
+          }
+       }
+    }
+ }
+
+// ==========================================================================
+// Mixins para la generación de los colores de los textos
+// ==========================================================================
+
+@mixin color-modifiers($attribute: 'background', $property: 'color') {
+    @each $name, $color in $colors {
+       &-#{$name} {
+          @each $tone, $hex in $color {
+             &-#{$tone} {
+             #{$property}: $hex;
+             }
+          }
+       }
+    }
+ }
