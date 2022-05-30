@@ -1,0 +1,9 @@
+
+// Paddings
+@include list-spacing('padding', 'all', '.p');
+@include list-spacing('padding', 'top', '.pt');
+@include list-spacing('padding', 'bottom', '.pb');
+@include list-spacing('padding', 'right', '.pr');
+@include list-spacing('padding', 'left', '.pl');
+@include list-spacing('padding', 'axis-y', '.py');
+@include list-spacing('padding', 'axis-x', '.px');

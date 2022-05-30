@@ -6,10 +6,10 @@ import './navbar.css';
 export const Navbar = () => {
     return (
         <nav>
-            <div className='navbar-container'>
+            <div className='navbar-container mb-base'>
                 {routes.map(({ to, name }) => (
 
-                    <NavLink to={to} className="navbar">
+                    <NavLink to={to} className="navbar" key={to}>
                         {name}
                     </NavLink>
                 ))}

@@ -1,0 +1,40 @@
+// Define skin(child) que se aplica al sistema
+@import './_colors.scss';
+
+// ==========================================================================
+// SPACING : Eje.: padding: map-get($sizes, "tiny");
+// ==========================================================================
+ 
+$sizes: (
+   none   : 0,
+   xtiny  : .25rem,  // 4px
+   tiny   : .5rem,   // 8px
+   xsmall : .75rem,  // 12px
+   small  : .875rem, // 14px
+   base   : 1rem,    // 16px
+   thumb  : 1.125rem,// 18px
+   mid    : 1.25rem, // 20px
+   half   : 1.5rem,  // 24px
+   medium : 2rem,    // 32px
+   xmedium: 2.25rem, // 36px
+   large  : 3rem,    // 48px
+   xlarge : 3.5rem,  // 56px
+   huge   : 4rem     // 64px
+);
+
+// ========================================================================== 
+// COLORS : Eje.: background: color( primary, light ); 
+// ========================================================================== 
+
+$colors: (
+    primary: (
+        base    : $primaryBase,
+        light   : $primaryLight,
+        dark    : $primaryDark,
+    ),
+    secondary: (
+        base    : $secondaryBase,
+        light   : $secondaryLight,
+        dark    : $secondaryDark,
+    ),
+);
