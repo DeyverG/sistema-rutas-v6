@@ -1,0 +1,10 @@
+@import '../config/variables.scss';
+@import '../config/_colors.scss';
+
+.input-field{
+    border-radius: map-get($sizes, xtiny);
+    height: map-get($sizes, medium );
+    outline: none;
+    border-style: none;
+    width: 300px;
+}

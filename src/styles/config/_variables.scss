@@ -37,4 +37,7 @@ $colors: (
         light   : $secondaryLight,
         dark    : $secondaryDark,
     ),
+    error: (
+        base    : $errorBase,
+    ),
 );
