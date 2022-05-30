@@ -1,5 +1,5 @@
 // ==========================================================================
-// Mixins para la generación de los spaciados ( margins y paddings )
+// Mixins para generar los Espaciados ( margins y paddings )
 // ==========================================================================
 
 @mixin list-spacing($type, $direction, $className) {
@@ -45,10 +45,10 @@
  }
 
 // ==========================================================================
-// Mixins para la generación de los colores de los textos
+// Mixins para generar los colores de los textos
 // ==========================================================================
 
-@mixin color-modifiers($attribute: 'background', $property: 'color') {
+@mixin color-modifiers($property: 'color') {
     @each $name, $color in $colors {
        &-#{$name} {
           @each $tone, $hex in $color {
